@@ -1,0 +1,257 @@
+$header-height: 54px
+$header-bg: #171616
+* 
+    padding: 0
+    margin: 0
+    border: 0
+    outline: none
+    text-rendering: optimizeLegibility
+    font-family: Tahoma, sans-serif
+    font-size: 14px
+    font-weight: 300
+
+
+body 
+    background: #efefef
+    min-width: 240px
+    width: 100%
+    padding-top: 70px
+
+#mask
+    display: none
+    z-index: 100
+    position: fixed
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background: rgba(0,0,0,.3) !important
+    
+.mask-block
+    display: block !important
+    
+
+
+.transform 
+    transition: transform .3s ease-out
+    -webkit-transition: -webkit-transform .3s ease-out
+    -o-transition: -o-transform .3s ease-out
+    -moz-transition: -moz-transition .3s ease-out
+    -ms-transform: -ms-transition .3 ease-out
+    -webkit-backface-visibility: hidden
+    -webkit-perspective: 0
+    -moz-perspective: 0
+
+
+
+/*  боковая панель  */
+
+.sidebar 
+    display: none
+    width: 200px
+    position: fixed
+    top: $header-height
+    bottom: 0px
+    left: 0px
+    background: #1c1b1b
+    overflow: hidden
+    z-index: 999
+    -webkit-transition: .3s ease-out all
+    -moz-transition: .3s ease-out all
+    -ms-transition: .3s ease-out all
+    -o-transition: .3s ease-out all
+    transition: .3s ease-out all
+    .profile 
+        display: block
+        margin: 15px 10px 15px 10px
+        height: 80px
+        border-bottom: 1px solid #262626
+        .avatar 
+            float: left
+            width: 64px
+            img 
+                width: 64px
+                height: 64px
+                border-radius: 50%
+            
+        
+        .login 
+            float: right
+            width: 105px
+        
+        .login a 
+            display: block
+            margin-bottom: 4px
+            height: 1%
+            padding: 5px 10px
+            background: #262626
+            border-radius: 3px
+            color: #f4f4f4
+            font-size: 14px
+            text-decoration: none
+            text-align: center
+        
+    
+    ul.menu li 
+        position: relative
+        display: block
+        height: 30px
+        line-height: 28px
+        margin-bottom: 3px
+        padding: 5px 10px
+        display: block
+        background: #262626
+        border-radius: 3px
+        i
+            display: none
+    
+    ul.menu li > a 
+        font-size: 14px
+        color: #f4f4f4
+        text-decoration: none
+        text-align: center
+        display: block
+    
+
+
+
+/*  шапка  */
+
+header
+    margin: 0
+    width: 100%
+    position: fixed
+    height: $header-height
+    background-color: $header-bg
+    border-bottom: 1px solid #EA4343
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .3)
+    z-index: 999
+    top: -2px
+    left: 0
+    padding-top: 2px
+    &.head-fixed 
+        // position: fixed
+        // top: 0
+        // left: 0
+    
+    .logo 
+        background-image: url(https://tablet-apps.ru/mobile/images/logo@2x.png)
+        display: block
+        height: 48px
+        background-size: 150px
+        background-repeat: no-repeat
+        background-position: center center
+        margin: 3px 55px
+    
+    .pull-left 
+        position: absolute
+        top: 0
+        left: 10px
+    
+    .pull-right 
+        position: absolute
+        top: 0
+        right: 3px
+    
+    .icon-active
+        opacity: 0.5
+    
+    i 
+        margin: 17px 12px
+        display: block
+        width: 24px
+        height: 24px
+    
+        
+
+
+.quick_seacrh 
+    display: none
+    margin-top: -2px
+    position: fixed
+    top: $header-height
+    bottom: 0px
+    left: 0px
+    width: 100%
+    height: 46px
+    background-color: #171616
+    padding-top: 3px
+    border-bottom: 1px solid #EA4343
+    z-index: 1000
+    input[type="text"] 
+        display: block
+        background: #262626
+        width: 80%
+        color: #A9A9A9
+        padding: 8px 5px
+        margin: 0 auto
+        border: 1px solid #583636
+        box-sizing: border-box
+    button
+        display: none
+        position: absolute
+        background: white
+        top: 3px
+        right: 9%
+        height: 35px
+        padding: 0 12px
+        border-radius: 0 5px 5px 0
+        box-sizing: border-box
+
+    
+
+
+.container 
+    // padding-top: 70px
+
+
+.cat_descr 
+    display: block
+    margin: 20px 0
+    background: #ffffff
+    padding: 1em
+    box-shadow: 0 0 40px rgba(0, 0, 0, .1) inset
+    text-align: justify
+
+.socials
+    text-align: center
+    li
+        display: inline-block
+        list-style: none
+    .icon
+        border-radius: 5px
+
+
+footer 
+    background: $header-bg
+    padding: 15px 10px
+    color: #ffffff
+    ul li 
+        display: inline-block
+        margin-bottom: 1%
+        height: 1%
+        padding: 1% 2%
+        background: #262626
+        border-radius: 3px
+        list-style-type: none
+        width: 49%
+        box-sizing: border-box
+        a 
+            color: #a9a9a9
+            text-decoration: none
+        
+    
+    .copyright 
+        margin: 15px 0 3px 0
+        text-align: center
+        a 
+            color: #c91717
+            text-decoration: none
+        
+    
+@media screen and (max-width: 480px)
+    footer 
+        ul li
+            width: 100%
+            padding: 5px 10px
+            margin-bottom: 3px

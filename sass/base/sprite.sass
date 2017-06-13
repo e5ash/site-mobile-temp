@@ -1,0 +1,153 @@
+$male-name: 'male'
+$male-x: 0px
+$male-y: 0px
+$male-offset-x: 0px
+$male-offset-y: 0px
+$male-width: 100px
+$male-height: 84px
+$male-total-width: 228px
+$male-total-height: 212px
+$male-image: '../../img/sprite.png'
+$male: (0px, 0px, 0px, 0px, 100px, 84px, 228px, 212px, '../../img/sprite.png', 'male', )
+$search-name: 'search'
+$search-x: 128px
+$search-y: 84px
+$search-offset-x: -128px
+$search-offset-y: -84px
+$search-width: 24px
+$search-height: 24px
+$search-total-width: 228px
+$search-total-height: 212px
+$search-image: '../../img/sprite.png'
+$search: (128px, 84px, -128px, -84px, 24px, 24px, 228px, 212px, '../../img/sprite.png', 'search', )
+$social-fb-name: 'social-fb'
+$social-fb-x: 100px
+$social-fb-y: 0px
+$social-fb-offset-x: -100px
+$social-fb-offset-y: 0px
+$social-fb-width: 64px
+$social-fb-height: 64px
+$social-fb-total-width: 228px
+$social-fb-total-height: 212px
+$social-fb-image: '../../img/sprite.png'
+$social-fb: (100px, 0px, -100px, 0px, 64px, 64px, 228px, 212px, '../../img/sprite.png', 'social-fb', )
+$social-goo-name: 'social-goo'
+$social-goo-x: 0px
+$social-goo-y: 84px
+$social-goo-offset-x: 0px
+$social-goo-offset-y: -84px
+$social-goo-width: 64px
+$social-goo-height: 64px
+$social-goo-total-width: 228px
+$social-goo-total-height: 212px
+$social-goo-image: '../../img/sprite.png'
+$social-goo: (0px, 84px, 0px, -84px, 64px, 64px, 228px, 212px, '../../img/sprite.png', 'social-goo', )
+$social-mail-name: 'social-mail'
+$social-mail-x: 64px
+$social-mail-y: 84px
+$social-mail-offset-x: -64px
+$social-mail-offset-y: -84px
+$social-mail-width: 64px
+$social-mail-height: 64px
+$social-mail-total-width: 228px
+$social-mail-total-height: 212px
+$social-mail-image: '../../img/sprite.png'
+$social-mail: (64px, 84px, -64px, -84px, 64px, 64px, 228px, 212px, '../../img/sprite.png', 'social-mail', )
+$social-ok-name: 'social-ok'
+$social-ok-x: 164px
+$social-ok-y: 0px
+$social-ok-offset-x: -164px
+$social-ok-offset-y: 0px
+$social-ok-width: 64px
+$social-ok-height: 64px
+$social-ok-total-width: 228px
+$social-ok-total-height: 212px
+$social-ok-image: '../../img/sprite.png'
+$social-ok: (164px, 0px, -164px, 0px, 64px, 64px, 228px, 212px, '../../img/sprite.png', 'social-ok', )
+$social-vk-name: 'social-vk'
+$social-vk-x: 164px
+$social-vk-y: 64px
+$social-vk-offset-x: -164px
+$social-vk-offset-y: -64px
+$social-vk-width: 64px
+$social-vk-height: 64px
+$social-vk-total-width: 228px
+$social-vk-total-height: 212px
+$social-vk-image: '../../img/sprite.png'
+$social-vk: (164px, 64px, -164px, -64px, 64px, 64px, 228px, 212px, '../../img/sprite.png', 'social-vk', )
+$social-ya-name: 'social-ya'
+$social-ya-x: 0px
+$social-ya-y: 148px
+$social-ya-offset-x: 0px
+$social-ya-offset-y: -148px
+$social-ya-width: 64px
+$social-ya-height: 64px
+$social-ya-total-width: 228px
+$social-ya-total-height: 212px
+$social-ya-image: '../../img/sprite.png'
+$social-ya: (0px, 148px, 0px, -148px, 64px, 64px, 228px, 212px, '../../img/sprite.png', 'social-ya', )
+$time-name: 'time'
+$time-x: 164px
+$time-y: 128px
+$time-offset-x: -164px
+$time-offset-y: -128px
+$time-width: 16px
+$time-height: 16px
+$time-total-width: 228px
+$time-total-height: 212px
+$time-image: '../../img/sprite.png'
+$time: (164px, 128px, -164px, -128px, 16px, 16px, 228px, 212px, '../../img/sprite.png', 'time', )
+$spritesheet-width: 228px
+$spritesheet-height: 212px
+$spritesheet-image: '../../img/sprite.png'
+$spritesheet-sprites: ($male, $search, $social-fb, $social-goo, $social-mail, $social-ok, $social-vk, $social-ya, $time, )
+$spritesheet: (228px, 212px, '../../img/sprite.png', $spritesheet-sprites, )
+
+@mixin sprite-width($sprite)
+  width: nth($sprite, 5)
+
+@mixin sprite-height($sprite)
+  height: nth($sprite, 6)
+
+@mixin sprite-position($sprite)
+  $sprite-offset-x: nth($sprite, 3)
+  $sprite-offset-y: nth($sprite, 4)
+  background-position: $sprite-offset-x  $sprite-offset-y
+
+@mixin sprite-image($sprite)
+  $sprite-image: nth($sprite, 9)
+  background-image: url(#{$sprite-image})
+
+@mixin sprite($sprite)
+  @include sprite-image($sprite)
+  @include sprite-position($sprite)
+  @include sprite-width($sprite)
+  @include sprite-height($sprite)
+
+@mixin sprites($sprites)
+  @each $sprite in $sprites
+    $sprite-name: nth($sprite, 10)
+    .#{$sprite-name}
+      @include sprite($sprite)
+
+i.icon
+  display: inline-block
+
+i.icon-male
+  @include sprite($male)
+i.icon-search
+  @include sprite($search)
+i.icon-social-fb
+  @include sprite($social-fb)
+i.icon-social-goo
+  @include sprite($social-goo)
+i.icon-social-mail
+  @include sprite($social-mail)
+i.icon-social-ok
+  @include sprite($social-ok)
+i.icon-social-vk
+  @include sprite($social-vk)
+i.icon-social-ya
+  @include sprite($social-ya)
+i.icon-time
+  @include sprite($time)

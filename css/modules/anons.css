@@ -1,0 +1,28 @@
+.anonsstory {
+  padding: 10px 0 5px 0;
+  background: #ffffff;
+  margin-bottom: 15px; }
+  .anonsstory .anons-date {
+    float: left;
+    width: 100px; }
+    .anonsstory .anons-date span {
+      display: block;
+      text-align: center;
+      font-size: 18px; }
+    .anonsstory .anons-date span.day {
+      color: #c70404;
+      font-size: 22px; }
+  .anonsstory .anons-icone {
+    float: left;
+    width: 100px; }
+  .anonsstory img {
+    width: 80px;
+    height: 80px;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), -23px 0 20px -23px rgba(0, 0, 0, 0.8), 23px 0 20px -23px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), -23px 0 20px -23px rgba(0, 0, 0, 0.8), 23px 0 20px -23px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+  .anonsstory .anons-title {
+    font-weight: 600;
+    font-size: 16px; }
+  .anonsstory .anons-developer,
+  .anonsstory .anons-category {
+    font-size: 14px; }

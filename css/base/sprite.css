@@ -1,0 +1,56 @@
+i.icon {
+  display: inline-block; }
+
+i.icon-male {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px 0px;
+  width: 100px;
+  height: 84px; }
+
+i.icon-search {
+  background-image: url(../../img/sprite.png);
+  background-position: -128px -84px;
+  width: 24px;
+  height: 24px; }
+
+i.icon-social-fb {
+  background-image: url(../../img/sprite.png);
+  background-position: -100px 0px;
+  width: 64px;
+  height: 64px; }
+
+i.icon-social-goo {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -84px;
+  width: 64px;
+  height: 64px; }
+
+i.icon-social-mail {
+  background-image: url(../../img/sprite.png);
+  background-position: -64px -84px;
+  width: 64px;
+  height: 64px; }
+
+i.icon-social-ok {
+  background-image: url(../../img/sprite.png);
+  background-position: -164px 0px;
+  width: 64px;
+  height: 64px; }
+
+i.icon-social-vk {
+  background-image: url(../../img/sprite.png);
+  background-position: -164px -64px;
+  width: 64px;
+  height: 64px; }
+
+i.icon-social-ya {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -148px;
+  width: 64px;
+  height: 64px; }
+
+i.icon-time {
+  background-image: url(../../img/sprite.png);
+  background-position: -164px -128px;
+  width: 16px;
+  height: 16px; }

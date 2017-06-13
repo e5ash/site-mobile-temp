@@ -1,0 +1,214 @@
+.fullstory 
+    display: block
+    position: relative
+    margin: 0 0 25px 0
+    background: #ffffff
+    overflow: hidden
+    box-shadow: 0 1px 2px #505050
+    .head 
+        margin: 20px 15px
+        height: 100px
+        .icone 
+            float: left
+            img 
+                width: 100px
+                height: 100px
+                box-shadow: 0 1px 4px rgba(0, 0, 0, .3), -23px 0 20px -23px rgba(0, 0, 0, .8), 23px 0 20px -23px rgba(0, 0, 0, .8), 0 0 40px rgba(0, 0, 0, .1) inset
+            
+        
+        .info 
+            float: left
+            margin-left: 15px
+            height: 100px
+            overflow: hidden
+            h1 
+                font-size: 22px
+                height: 26px
+                overflow: hidden
+            
+            .mod 
+                color: #ea4343
+                font-weight: 700
+                font-size: 15px
+            
+            .developer,
+            .language 
+                font-size: 15px
+            
+        
+    
+    @media screen and (max-width: 380px) 
+        .head 
+            .info h1 
+                font-size: 16px
+            
+            .info .mod,
+            .info .developer 
+                font-size: 14px
+            
+            .info .language 
+                display: none
+            
+            .icone 
+                img 
+                    width: 72px
+                    height: 72px
+                
+            
+        
+    
+    h2 
+        margin: 10px 0
+        font-size: 18px
+        text-align: center
+    
+    .full-title 
+        text-align: center
+        padding: 5px 3px 0 3px
+        font-size: 20px
+        height: 30px
+        overflow: hidden
+    
+    .full-mod,
+    .full-date 
+        display: block
+        color: #434343
+        font-size: 13px
+        text-align: center
+        margin-bottom: 5px
+    
+    .story 
+        padding: 0 15px
+        max-height: 296px
+        overflow: hidden
+        text-align: justify
+    
+    .instructions 
+        margin: 10px 0
+        padding: 15px 30px
+        -moz-border-radius: 5px
+        -webkit-border-radius: 5px
+        -o-border-radius: 5px
+        -ms-border-radius: 5px
+        font-size: 12px
+        line-height: 18px
+        .title 
+            font-size: 13px
+            font-weight: bold
+            line-height: 24px
+        
+    
+    .cache_info 
+        background-color: #fef4c5
+        color: #845d29
+    
+    .cache_info ol li 
+        margin-left: 10px
+        font-size: 12px
+        b 
+            font-size: 12px
+            font-weight: 600px
+        
+    
+    .attachment 
+        background: none repeat scroll 0 0 #EEEEEE
+        border-radius: 5px
+        color: #808080
+        display: block
+        line-height: 24px
+        margin: 15px
+        padding: 8px 10px
+        font-size: 12px
+        text-align: center
+        span 
+            margin-left: 6px
+            font-size: 11px
+            color: #808080
+        
+        a 
+            display: block
+            font-size: 14px
+            font-weight: 700
+            color: red
+            text-decoration: none
+        
+        .videocard 
+            display: block
+            padding: 1px 6px
+            color: #f2eded
+            border-radius: 4px
+        
+    
+
+
+
+/*   Похожие новости   */
+
+.related 
+    .big_title 
+        margin: 10px 0
+        text-align: center
+        font-size: 18px
+    
+    ul li 
+        float: left
+        display: block
+        width: 46%
+        height: 76px
+        padding: 7px 2%
+        .poster 
+            float: left
+            width: 78px
+        
+        .poster img 
+            width: 64px
+            height: 64px
+            border-radius: 15px
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .3), -13px 0 10px -13px rgba(0, 0, 0, .8), 13px 0 10px -13px rgba(0, 0, 0, .8), 0 0 20px rgba(0, 0, 0, .1) inset
+        
+        .info 
+            .title 
+                font-weight: 600
+            
+            .mod 
+                color: #ea4343
+                font-size: 12px
+            
+            .version 
+                font-size: 12px
+            
+        
+    
+@media screen and (max-width: 470px) 
+    .fullstory
+        .head
+            height: auto
+            text-align: center
+            .icone
+                float: none
+            .info
+                float: none
+                margin-left: 0
+                height: auto
+@media screen and (max-width: 400px) 
+    span 
+        display: block
+    
+    .related 
+        ul li 
+            width: 100%
+            height: 70px
+            &:nth-child(2n) 
+                background: rgba(172, 172, 172, 0.13)
+            
+        
+        .poster 
+            float: left
+            width: 50px
+            height: 50px
+        
+        .poster img 
+            width: 48px
+            height: 48px
+        
+    

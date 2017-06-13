@@ -1,0 +1,170 @@
+.shortstory {
+  display: block;
+  position: relative;
+  margin: 0 0 2% 0;
+  padding: 1% 2% 0 2%;
+  background: #ffffff;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1px 2px #505050;
+          box-shadow: 0 1px 2px #505050;
+  width: 45%;
+  float: left;
+  min-height: 380px; }
+  .shortstory:nth-of-type(2n) {
+    float: right; }
+  .shortstory .short-title {
+    text-align: center;
+    padding: 5px 3px 0 3px;
+    font-size: 20px;
+    height: 30px;
+    overflow: hidden; }
+  .shortstory .short-mod,
+  .shortstory .short-date {
+    display: block;
+    color: #434343;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 5px; }
+  .shortstory .short-date {
+    position: absolute;
+    width: 100%;
+    bottom: 3px; }
+  .shortstory .short-mod {
+    color: #ea4343;
+    font-weight: 700; }
+  .shortstory .short-media {
+    height: 160px;
+    overflow: hidden; }
+  .shortstory .short-icone {
+    float: left;
+    padding: 0 5px;
+    width: 160px;
+    height: 160px; }
+    .shortstory .short-icone img {
+      display: inline-block;
+      width: 160px;
+      height: 160px;
+      text-align: center;
+      -webkit-border-radius: 15px;
+              border-radius: 15px;
+      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), -23px 0 20px -23px rgba(0, 0, 0, 0.8), 23px 0 20px -23px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+              box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), -23px 0 20px -23px rgba(0, 0, 0, 0.8), 23px 0 20px -23px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+  .shortstory i.icon-time {
+    position: relative;
+    top: 3px;
+    margin-right: 2px; }
+  .shortstory .short-param {
+    margin: 5px 0 0 10px;
+    float: left;
+    height: 160px; }
+    .shortstory .short-param ul li {
+      padding: 5px 0;
+      font-size: 14px;
+      list-style-type: none; }
+    .shortstory .short-param ul li span {
+      width: 100px;
+      font-weight: 600; }
+  .shortstory .short-text {
+    margin-top: 5px;
+    height: 100px;
+    font-size: 13px;
+    overflow: hidden;
+    text-align: justify; }
+
+.short-cache {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  background: #f5940f;
+  padding: 2px 4px;
+  font-size: 12px;
+  color: #ffffff;
+  -webkit-border-radius: 4px;
+          border-radius: 4px; }
+
+.navigation {
+  display: block;
+  margin: 20px 5px; }
+  .navigation span {
+    width: 40%;
+    background: #505050;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #505050;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    text-align: center; }
+  .navigation span a {
+    color: #ffffff;
+    text-decoration: none; }
+  .navigation .prev {
+    float: left; }
+  .navigation .next {
+    float: right; }
+
+@media screen and (max-width: 800px) {
+  .shortstory {
+    min-height: 510px; }
+    .shortstory .short-media {
+      height: auto; }
+    .shortstory .short-icone {
+      float: none;
+      text-align: center;
+      width: 100%; }
+    .shortstory .short-param {
+      float: none;
+      height: auto;
+      margin-left: 0; }
+      .shortstory .short-param span {
+        margin-right: 10px; }
+      .shortstory .short-param ul li {
+        display: none; }
+        .shortstory .short-param ul li:nth-of-type(1), .shortstory .short-param ul li:nth-of-type(2), .shortstory .short-param ul li:nth-of-type(3) {
+          display: block; }
+    .shortstory .short-date {
+      text-align: left; }
+    .shortstory span {
+      display: inline-block; } }
+
+@media screen and (max-width: 580px) {
+  .shortstory {
+    float: none !important;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    min-height: 1px;
+    padding: 15px 15px 2px;
+    margin-bottom: 25px; }
+    .shortstory .short-date {
+      position: relative;
+      margin-top: 10px;
+      bottom: 0;
+      width: auto; }
+    .shortstory .short-text {
+      height: auto; }
+    .shortstory .short-icone {
+      float: left;
+      text-align: left;
+      width: auto; }
+    .shortstory .short-param {
+      float: left;
+      height: auto;
+      margin-left: 15px; }
+      .shortstory .short-param ul li {
+        display: block; } }
+
+@media screen and (max-width: 405px) {
+  .shortstory .short-param ul li {
+    display: none; }
+    .shortstory .short-param ul li:nth-of-type(1), .shortstory .short-param ul li:nth-of-type(2) {
+      display: block; }
+    .shortstory .short-param ul li span {
+      display: block; } }
+
+@media screen and (max-width: 345px) {
+  .shortstory .short-icone {
+    float: none;
+    text-align: center; }
+  .shortstory .short-param {
+    float: none;
+    margin-left: 0; } }

@@ -1,0 +1,184 @@
+.shortstory 
+    display: block;
+    position: relative;
+    margin: 0 0 2% 0;
+    padding: 1% 2% 0 2%;
+    background: #ffffff;
+    overflow: hidden;
+    box-shadow: 0 1px 2px #505050;
+    width: 45%
+    float: left
+    min-height: 380px
+    &:nth-of-type(2n)
+        float: right
+    .short-title 
+        text-align: center;
+        padding: 5px 3px 0 3px;
+        font-size: 20px;
+        height: 30px;
+        overflow: hidden;
+    
+    .short-mod,
+    .short-date 
+        display: block;
+        color: #434343;
+        font-size: 13px;
+        text-align: center;
+        margin-bottom: 5px;
+    .short-date 
+        position: absolute
+        width: 100%
+        bottom: 3px
+    .short-mod 
+        color: #ea4343;
+        font-weight: 700
+    
+
+    .short-media 
+        height: 160px;
+        overflow: hidden;
+    
+    .short-icone 
+        float: left;
+        padding: 0 5px;
+        width: 160px;
+        height: 160px;
+        img 
+            display: inline-block;
+            width: 160px;
+            height: 160px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, .3), -23px 0 20px -23px rgba(0, 0, 0, .8), 23px 0 20px -23px rgba(0, 0, 0, .8), 0 0 40px rgba(0, 0, 0, .1) inset;
+        
+    i.icon-time
+        position: relative 
+        top: 3px
+        margin-right: 2px
+
+    .short-param 
+        margin: 5px 0 0 10px;
+        float: left;
+        height: 160px;
+        ul li
+            // display: none
+            padding: 5px 0;
+            font-size: 14px;
+            list-style-type: none;
+            // &:nth-of-type(1), &:nth-of-type(2)
+            //     display: block
+        
+        ul li span 
+            width: 100px;
+            font-weight: 600;
+        
+    
+    .short-text 
+        margin-top: 5px;
+        height: 100px;
+        font-size: 13px;
+        overflow: hidden;
+        text-align: justify;
+    
+
+
+.short-cache 
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    background: rgb(245, 148, 15);
+    padding: 2px 4px;
+    font-size: 12px;
+    color: #ffffff;
+    border-radius: 4px;
+
+
+.navigation 
+    display: block;
+    margin: 20px 5px;
+    span 
+        width: 40%;
+        background: #505050;
+        padding: 10px 0;
+        font-size: 18px;
+        color: #505050;
+        border-radius: 5px;
+        text-align: center;
+    
+    span a 
+        color: #ffffff;
+        text-decoration: none
+    
+    .prev 
+        float: left;
+    
+    .next 
+        float: right;
+    
+
+
+@media screen and (max-width: 800px)
+    .shortstory
+        min-height: 510px
+        .short-media
+            height: auto
+        .short-icone
+            float: none
+            text-align: center
+            width: 100%
+        .short-param
+            float: none
+            height: auto
+            margin-left: 0
+            span
+                margin-right: 10px
+            ul li
+                display: none
+                &:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3)
+                    display: block
+        .short-date
+            text-align: left
+        span
+            display: inline-block
+@media screen and (max-width: 580px)
+    .shortstory
+        float: none !important
+        width: 100%
+        box-sizing: border-box
+        min-height: 1px
+        padding: 15px 15px 2px
+        margin-bottom: 25px
+        .short-date
+            position: relative
+            margin-top: 10px
+            bottom: 0
+            width: auto
+        .short-text
+            height: auto
+        .short-icone
+            float: left
+            text-align: left
+            width: auto
+        .short-param
+            float: left
+            height: auto
+            margin-left: 15px
+            ul li
+                display: block
+@media screen and (max-width: 405px)
+    .shortstory 
+        .short-param 
+            ul li
+                display: none
+                &:nth-of-type(1), &:nth-of-type(2)
+                    display: block
+                span
+                    display: block
+@media screen and (max-width: 345px)
+    .shortstory
+        .short-icone
+            float: none
+            text-align: center
+        .short-param
+            float: none
+            margin-left: 0
